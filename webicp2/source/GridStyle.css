@@ -1,0 +1,20 @@
+/*css of parent element*/
+.container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  line-height:30px;
+  justify-content: center;
+}
+/*css of child element*/
+.item {
+
+  margin: 5px;
+  color: white;
+  text-align: center;
+  height:70px;
+  width:70px
+}
+
+
