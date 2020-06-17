@@ -1,0 +1,62 @@
+*{
+    margin: 50;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: orange(251, 255, 255);
+}
+header{
+    background: lightblue;
+    padding: 30px;
+    padding-bottom: 20px;
+}
+
+header>h2{
+    color: blueviolet;
+    text-align: center;
+    font-family: "Script MT Bold", serif;
+}
+.results{
+    font-size: 40px;
+    color: darkorange;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial, serif;
+}
+
+
+.options {
+    padding-left: 200px;
+    padding: 5px;
+
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.option{
+    float: left;
+    padding: 4px;
+    margin-left: 200px;
+    height: 200px !important;
+    width: 200px !important;
+
+}
+.option:hover{
+    cursor: pointer;
+}
+#move_selection{
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #020306;
+    font-size: 25px;
+}
+
+#move_selection{
+    text-align: left;
+    font-family: Arial, serif;
+}
+}
