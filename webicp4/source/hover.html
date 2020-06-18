@@ -1,0 +1,40 @@
+<!--declaring doc type-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--title of the document-->
+    <title>Photo Gallery</title>
+    <!--refering to css sheet-->
+    <link href="hover.css" rel="stylesheet">
+    <!--refering javascript files-->
+    <script src="hover.js"></script>
+    <!--including jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'> </script>
+
+</head>
+<body>
+<!--frame on which should show relevant image and text-->
+
+<div id="image">
+    Hover over one of the image below to display here.
+</div>
+<!--image that shows in frame-->
+
+<img alt="Batter is ready" class="preview" id="img1"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="https://raw.githubusercontent.com/PardhaSaradhi74/Web-and-Mobile-2020-summer/master/webicp4/documentation/batter.jpg">
+
+<img alt="Perfect Baking" class="preview" id="img2"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="https://raw.githubusercontent.com/PardhaSaradhi74/Web-and-Mobile-2020-summer/master/webicp4/documentation/cake%20making.jpg">
+
+<img alt="The best Cup Cake " class="preview" id="img3"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="https://raw.githubusercontent.com/PardhaSaradhi74/Web-and-Mobile-2020-summer/master/webicp4/documentation/cakeready.jpg">
+</body>
+</html>
