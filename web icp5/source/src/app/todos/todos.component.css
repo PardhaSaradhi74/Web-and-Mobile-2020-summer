@@ -1,0 +1,36 @@
+.btn{
+    margin: 5px;
+  }
+  label{
+    font-size: 2em;
+  }
+  .item
+  {
+    margin:10px 0;
+  }
+  .complete{
+    text-decoration: line-through;
+  }
+  .item-style{
+    border: 1.5px solid;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: moccasin;
+  }
+  /* You can add global styles to this file, and also import other style files *//* You can add global styles to this file, and also import other style files */
+  
+  p.timer {
+    width:30%;
+    margin:0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px #ccc;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .timer .text {
+    font-size: 10px;   
+  }

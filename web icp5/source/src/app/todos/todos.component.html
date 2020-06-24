@@ -1,0 +1,56 @@
+<div class="text-center">
+    <h3>TO DO LIST</h3>
+    <button class="btn btn-default" (click)="showTimer()">Show Timer</button>
+</div>
+<p class="timer" *ngIf="timerMessage">
+    {{timerMessage.days}} 
+    <span class="text">days</span>
+    {{timerMessage.hours}} <span class="text">hours</span> 
+    {{timerMessage.minutes}} 
+    <span class="text">minutes</span>
+    {{timerMessage.seconds}} <span class="text">seconds</span>
+</p>
+  <!--This is input box to enter the todo-->
+<div class="col-sm-4 col-sm-offset-4">
+
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter the todo" [(ngModel)]="todoItem">
+      <span class="input-group-addon hidden-sm hidden-xs" (click)="submitNewItem()"><i class="fas fa-plus"></i> Add</span>
+      <span class="input-group-addon hidden-md hidden-lg" (click)="submitNewItem()"><i
+        class="fas fa-plus"></i></span>
+    </div>
+</div>
+
+  <!--This div is to display the todo item-->
+<div class="col-sm-offset-2 col-sm-8">
+    <!--ng- repeat is an angular directive, which is used to loop an array-->
+    <div *ngFor="let item of items;let i=index">
+      <!--This div is visible in mobile and tablet-->
+      <div class="hidden-md hidden-lg item">
+        <div class="col-xs-12 item-style">
+          <label [ngClass]="{complete: item.status}">{{item.todo}}</label>
+          <button class="btn btn-danger pull-right" (click)="deleteItem(i)"><i class="fas fa-trash"></i>
+          </button>
+          <button class="btn btn-default pull-right" *ngIf="!item.status" (click)="completeItem(i)"><i
+            class="fas fa-check"></i></button>
+          <button class="btn btn-success pull-right" *ngIf="item.status" (click)="pendingItem(i)"><i
+            class="fas fa-check"></i></button>
+        </div>
+      </div>
+      <!--This div is visible in desktop and Tvs-->
+      <div class="hidden-sm hidden-xs item">
+        <div class="col-sm-12 item-style">
+          <label [ngClass]="{complete: item.status}">{{item.todo}}</label>
+          <button class="btn btn-danger pull-right" (click)="deleteItem(i)"><i class="fas fa-trash"></i>
+            Delete
+          </button>
+          <button class="btn btn-default pull-right" *ngIf="!item.status" (click)="completeItem(i)"><i
+            class="fas fa-check"></i> Pending
+          </button>
+          <button class="btn btn-success pull-right" *ngIf="item.status" (click)="pendingItem(i)"><i
+            class="fas fa-check"></i> Complete
+          </button>
+        </div>
+      </div>
+    </div>
+</div>
