@@ -1,0 +1,19 @@
+.parent-container {
+  position: relative;
+  height:100%;
+  width: 100%;
+}
+
+.child-container {
+  /*color: blue;*/
+  text-align: center;
+  position: absolute;
+  top:50%;
+  /*background: #ccc;*/
+
+}
+.desc {
+  font-family: Georgia;
+  font-size: 17px;
+}
+
